@@ -3,7 +3,7 @@
 module PlausibleApi
   module Stats
     class Base < ApiBase
-      ALLOWED_PERIODS = %w[12mo 6mo month 30d 7d day custom]
+      ALLOWED_PERIODS = %w[12mo 6mo month 30d 7d day custom all]
       ALLOWED_METRICS = %w[visitors visits pageviews views_per_visit bounce_rate visit_duration events]
       ALLOWED_COMPARE = %w[previous_period]
       ALLOWED_INTERVALS = %w[date month]

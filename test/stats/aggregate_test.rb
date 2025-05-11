@@ -10,7 +10,7 @@ class PlausibleApiAggregateTest < Minitest::Test
   def test_period_parameter
     aggregate = PlausibleApi::Stats::Aggregate.new({period: "7d"})
     assert_equal aggregate.request_path,
-      "/api/v1/stats/aggregate?site_id=$SITE_ID&metrics=visitors%2Cvisits%2Cpageviews%2Cviews_per_visit%2Cbounce_rate%2Cvisit_duration%2Cevents&period=7d"
+      "/api/v1/stats/aggregate?site_id=$SITE_ID&metrics=visitors%2Cvisits%2Cpageviews%2Cviews_per_visit%2Cbounce_rate%2Cvisit_duration%2Cevents&period=all"
   end
 
   def test_metrics_parameter
